@@ -1,0 +1,7 @@
+a = "hello"
+b = "github"
+print(a +b)
+
+
+print('hello github")
+

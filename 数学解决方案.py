@@ -74,22 +74,22 @@ if choie1 ==1:
 			print("输入分钟输入1\n小时输入2\n月输入3\n年输入4\n")
 			choice = int(input('需要转换的项目：'))
 			if choice==1:
-				minute = int(input('输入转换分钟：'))
+				minute = float(int(input('输入转换分钟：')))
 				hours = minute/60
-				print('%d分钟等于%f小时' %(minute , hours))
+				print('%0.2f分钟等于%0.2f小时' %(minute , hours))
 			elif choice ==2:
-				hours1 = int(input('需要转换的小时：'))
+				hours1 = float(int(input('需要转换的小时：')))
 				day = hours1/24
-				print('%d小时等于%f天' %(hours1 ,day))
+				print('%0.2f小时等于%0.2f天' %(hours1 ,day))
 
 			elif choice ==3:
-				month =int(input('需要转换月份总数：'))
+				month =float(int(input('需要转换月份总数：')))
 				year = month/12
-				print('%d月份等于%f年' %(month , year))
+				print('%0.2f月份等于%0.2年' %(month , year))
 			elif choice ==4:
-				year1 =int(input('需要转换的年份：'))
+				year1 =float(int(input('需要转换的年份：')))
 				century = year1/100
-				print('%d年等于%f世纪' %(year1 , century))
+				print('%0.2f年等于%0.2f世纪' %(year1 , century))
 			else:
 				print('输入错误')
 				
@@ -98,22 +98,22 @@ if choie1 ==1:
 			print('小时输入1\n天输入2\n年输入3\n世纪输入4\n')
 			choice1 = int(input('需要做的功能：'))
 			if choice1 ==1:
-				time = int(input('需要转换小时'))
+				time = float(int(input('需要转换小时')))
 				minute1 = time *60
-				print('%d小时等于%d分钟' %(time , minute1))
+				print('%0.2f小时等于%0.2f分钟' %(time , minute1))
 			elif choice1 ==2:
-				day1 = int(input('需要转换的天数：'))
+				day1 = float(int(input('需要转换的天数：')))
 				time2 = day1 *24
-				print('%d天等于%d小时' %(day1 , time2))
+				print('%0.2f天等于%o.2f小时' %(day1 , time2))
 			elif choice1 ==3:
-				year2 = int(input('需要转换的年份总合：'))
+				year2 = float(int(input('需要转换的年份总合：')))
 				month1 = year2 *12
-				print('%d年等于%d月' %(year2 , month1))
+				print('%0.2f年等于%0.2f月' %(year2 , month1))
 
 			elif choice1 ==4:
-				century1 = int(input('需要转换的世纪总和：'))
+				century1 = float(int(input('需要转换的世纪总和：')))
 				year3 = century1 *100
-				print('%d世纪等于%d年' %(century1 , year3))
+				print('%0.2f世纪等于%0.2f年' %(century1 , year3))
 
 		else:
 			print('输入错误')
